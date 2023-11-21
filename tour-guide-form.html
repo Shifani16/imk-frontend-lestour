@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUBMIT REVIEW</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="tour-guide-form.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    
+  </head>
+  <body>
+    <h2>tell us your experience!</h2>
+    <div class="wrapper">
+        <div class="review-container">
+          <form action="#">
+            <div class="star-widget">
+              <input type="number" name="rating" hidden />
+              <i class="bx bx-star star" style="--i: 0"></i>
+              <i class="bx bx-star star" style="--i: 1"></i>
+              <i class="bx bx-star star" style="--i: 2"></i>
+              <i class="bx bx-star star" style="--i: 3"></i>
+              <i class="bx bx-star star" style="--i: 4"></i>
+            </div>
+
+            <div class="rate-content">
+                <div class="user-name">
+                    <div class="name-text">
+                        <h4>Username</h4>
+                    </div>
+            
+                    <div class="textarea">
+                        <textarea cols="20" rows="1" placeholder="Whats your name?"></textarea>
+                      </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-text">
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="textarea">
+                        <textarea cols="30" rows="5" placeholder="Write your thought" class="area-review"></textarea>
+                      </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+              <a href="guide-detail.html#review" class="btn-cancel">Cancel</a>
+              <button type="button" class="btn-send" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body ">
+        <h2>THANK YOU</h2>
+        <p>Your experience is important for us to improve our services</p>
+      </div>
+      <div class="modal-footer d-flex justify-content-center mb-3">
+        <button type="button" class="btn btn-secondary" onclick="redirectToPage()">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="tour-guide-form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

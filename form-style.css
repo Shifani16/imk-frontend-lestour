@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font-style);
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: rgb(20, 20, 20);
+    --main-color: #d35d02;
+    --font-style: 'Poppins';
+    --star-color: rgb(255, 221, 0);
+    
+    --h1-font: 4rem;
+    --h2-font: 3.5rem;
+    --h2-5-font: 2.5rem;
+    --h3-5-font: 2rem;
+    --h3-font: 1.3rem;
+    --btn-font: 1em;
+    --p-font: 1.1rem;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    color: var(--text-color);
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+body h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font);
+    font-weight: 600;
+    font-family: var(--font-style);
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.wrapper {
+    margin-top: 2%;
+    background: #1b1b1b;
+    padding: 1rem;
+    max-width: 50%;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: #000000;
+    margin-bottom: 2%;
+}
+
+.user-name {
+    align-items: center;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 3%;
+}
+
+.star-widget {
+    font-size: 3rem;
+    color: var(--star-color);
+    margin-bottom: 2%;
+} 
+
+.star-widget .star {
+    cursor: pointer;
+}
+
+.star-widget .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.star-widget .star:hover {
+    transform: scale(1.1);
+}
+
+
+.btn-group {
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.btn-send {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--text-color);
+    color: var(--main-color);
+    border-radius: 12px;
+    font-size: var(--btn-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.btn-send:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+
+.btn-cancel {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 12px;
+    font-size: var(--btn-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .50s ease;
+    border: 1px solid white;
+    margin-right: 15%;
+}
+
+.btn-cancel:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+    transform: translateX(5px);
+}
+
+textarea {
+    width: 100%;
+    background: #444;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    resize: none;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+
+.modal-content {
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-header button.close {
+    color: #fff;
+}
+
+.modal-body {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.modal-body p {
+    font-size: var(--p-font);
+}
+
+.modal-content .modal-header {
+    border-bottom: none;
+}
+
+.modal-content .modal-footer {
+    border-top: none;
+}
+
+.modal-footer {
+    align-items: center;
+}
+
+.user-name {
+    margin-left: 10%;
+}
+
+.comment {
+    margin-left: 10%;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 1900px) {
+    .btn-group {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .btn-group {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .btn-group {
+        margin-left: 60%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .btn-group {
+        margin-left: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    .user-name {
+        flex-direction: column;
+        margin-left: -1%;
+    }
+    .comment {
+        flex-direction: column;
+        margin-left: -1%;
+    }
+
+    .wrapper {
+        max-width: 80%;
+    }
+
+    body h2 {
+        margin-bottom: 1em;
+    }
+
+    .comment textarea {
+        height: 15vh;
+        max-width: 70%;
+    }
+
+    .user-name textarea {
+        max-width: 100%;
+    }
+    .btn-group {
+        margin-left: -10%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    h2 {
+        height: 40vh;
+    }
+
+    .star-widget i {
+        max-width: 100%;
+        font-size: 45px;
+    }
+
+    .user-name textarea {
+        max-width: 100%;
+    } 
+}
+

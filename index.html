@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESTOUR || PLAN YOUR ADVENTURE</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon & remix icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"> 
+
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <img src="images/logo blue.png" alt="" srcset="" class="logo">
+        <ul class="navbar">
+            <li>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#destination">Destination</a>
+                <a href="#guide">Guide</a>
+                <a href="#other">Other</a>
+            </li>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </ul>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+        
+        <div class="home-text">
+            <h1>PREPARE YOURSELF FOR ADVENTURE<br>PLAN IT WITH US</br></h1>
+
+            <div class="btn-container">
+                <a href="#about" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h1>ABOUT US</h1>
+
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies finibus magna, vel facilisis orci commodo vel. Vestibulum sit amet est leo. Praesent luctus risus eget eros luctus iaculis. Praesent at rutrum odio. Vivamus nec diam ut velit sodales aliquet. Curabitur sed vestibulum lorem, vitae semper ipsum. Donec ullamcorper nibh massa, quis ullamcorper ante interdum eu. Donec elementum porttitor sollicitudin. Sed dolor est, laoreet quis urna id, condimentum efficitur mi. Cras egestas ac massa id hendrerit. Nam a feugiat dolor. Phasellus eros risus, pulvinar aliquet mauris et, accumsan scelerisque tellus. <br><br>Nunc libero magna, varius in rhoncus sed, ultrices ut tortor. Etiam pretium fermentum ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed efficitur urna interdum pellentesque condimentum. </p>
+                <a href="#destination"><i class="ri-arrow-down-s-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- destination -->
+    <section class="destination" id="destination">
+        <div class="desti-container">
+            <h1>DESTINATION</h1>
+        </div>
+
+        <div class="desti-content">
+            <form action="desti-search.html" class="search-bar" method="get">
+                <input type="text" placeholder="Search Your Destination" name="search-input" id="search-input">
+                <button type="submit"><i class="ri-search-2-line"></i></button>
+            </form>
+        </div>        
+
+        <div class="desti-box">
+            <h2>POPULAR<br><span>DESTINATION</span></h2>
+            <div class="destination-popular" id="PopularBox" onclick="return goReview()">
+                <div class="popular-box">
+                    <img src="images/paul-bill-qkp60sGtJPU-unsplash.jpg" alt="">
+                    <h6>Lorem Ipsum</h6>
+                    <h4>Dolor Sit Amet</h4>
+                </div>
+    
+                <div class="popular-box">
+                    <img src="images/t2.jpg">
+                    <h6>Lorem Ipsum</h6>
+                    <h4>Dolor Sit Amet</h4>
+                </div>
+    
+                <div class="popular-box">
+                    <img src="images/h1.png">
+                    <h6>Lorem Ipsum</h6>
+                    <h4>Dolor Sit Amet</h4>
+                </div>
+
+                <div class="popular-box">
+                    <img src="images/t1.jpg">
+                    <h6>Lorem Ipsum</h6>
+                    <h4>Dolor Sit Amet</h4>
+                </div>
+                
+            </div>
+            <a href="#guide"><i class="ri-arrow-down-s-line"></i></a>
+        </div>
+    </section>
+
+    <!-- guide -->
+    <section class="guide" id="guide">
+        <div class="guide-container">
+            <h1>GUIDE</h1>
+            <h2>OUR SERVICES!</h2>
+            <p>To accommodate you in your adventure, we provide you some of our best tour guide and place to stay by our partners</p>
+            <h6>Your destination Must Be an Actual Destination Name (ex. Pantai Kuta)</h6>
+        </div>
+
+        <div class="guide-content">
+            <form action="guide2.html" class="guide-bar" method="get">
+                <input type="text" placeholder="Your Destination" name="guide-input" id="guide-input">
+                <button type="submit_guide"><i class="ri-search-2-line"></i></button>
+            </form>
+        </div>
+
+        
+    </section>
+
+    <!-- other -->
+    <section class="other" id="other">
+        <div class="footer-container">
+            <div class="footer-box">
+                <img src="images/logo blue.png" alt="" srcset="">
+            </div>
+    
+            <div class="footer-box">
+                <h3>Destination</h3>
+                <a href="index.html#destination">Destination Recommendation</a>
+                <a href="index.html#search-input">Search Destination</a>
+            </div>
+    
+            <div class="footer-box">
+                <h3>Our Services</h3>
+                <a href="index.html#guide">Guide</a>
+                <a href="tips-faq.html">Travel Tips</a>
+                <a href="guide2.html#tour-review">Tour Guide Recommendation</a>
+                <a href="guide2.html#hotel">Hotel Services Partners</a>
+            </div>
+    
+            <div class="footer-box">
+                <h3>Send your thoughts</h3>
+                <a href="rate-us.html">Rate Us</a>
+            </div>
+    
+            <div class="social">
+                <h3>Contact Us</h3>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-mail-fill"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

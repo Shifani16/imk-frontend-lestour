@@ -246,6 +246,7 @@ header.sticky {
     display: flex;
     justify-content: flex-end;
     margin-right: 15%;
+    margin-bottom: 10%;
 
 }
 .contact-btn, .review-btn {

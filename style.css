@@ -633,6 +633,11 @@ header.sticky {
 }
 
 @media (max-width: 450px) {
+    :root {
+        --h1-font: 2.5rem;
+        --h2-font: 1.2rem;
+    }
+
     .desti-container h1 {
         font-size: var(--h1-font);
     }
@@ -645,4 +650,8 @@ header.sticky {
     .guide-container h6 {
         margin-bottom: 5%;
     }
+}
+
+@media (max-width:350px) {
+    
 }
